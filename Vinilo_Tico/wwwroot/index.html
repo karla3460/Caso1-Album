@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Vinilo Tico API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 8px 14px;
+            text-align: left;
+        }
+
+        th {
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vinilo Tico API</h1>
+    <p>API del catálogo de álbumes de la tienda Vinilo Tico.</p>
+
+    <table>
+        <tr><th>Método</th><th>Ruta</th><th>Descripción</th><th>Respuesta</th></tr>
+        <tr><td>GET</td><td>/api/Album</td><td>Lista los álbumes (filtro opcional ?artista=)</td><td>200</td></tr>
+        <tr><td>GET</td><td>/api/Album/{Id}</td><td>Obtiene un álbum por Id</td><td>200 / 404</td></tr>
+        <tr><td>POST</td><td>/api/Album</td><td>Crea un álbum</td><td>201</td></tr>
+        <tr><td>PUT</td><td>/api/Album/{Id}</td><td>Edita un álbum</td><td>204 / 404</td></tr>
+        <tr><td>DELETE</td><td>/api/Album/{Id}</td><td>Elimina un álbum</td><td>204 / 404</td></tr>
+    </table>
+</body>
+</html>

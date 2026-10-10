@@ -1,0 +1,6 @@
+@Vinilo_Tico_HostAddress = http://localhost:5255
+
+GET {{Vinilo_Tico_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
